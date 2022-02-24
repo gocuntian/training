@@ -1,2 +1,6 @@
 # training
 golang training
+
+```
+
+```
