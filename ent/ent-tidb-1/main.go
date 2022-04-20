@@ -62,22 +62,3 @@ func Do(ctx context.Context, client *ent.Client) error {
 	fmt.Printf("\n%v", prev.Value == tail.Value)
 	return nil
 }
-
-//root, err := client.Node.Create().SetValue(2).Save(ctx)
-//if err != nil {
-//return fmt.Errorf("creating the root: %w", err)
-//}
-//// Add additional nodes to the tree:
-////
-////       2
-////     /   \
-////    1     4
-////        /   \
-////       3     5
-////
-//n1 := client.Node.Create().SetValue(1).SetParent(root).SaveX(ctx)
-//n4 := client.Node.Create().SetValue(4).SetParent(root).SaveX(ctx)
-//n3 := client.Node.Create().SetValue(3).SetParent(n4).SaveX(ctx)
-//n5 := client.Node.Create().SetValue(5).SetParent(n4).SaveX(ctx)
-//fmt.Println("Tree leafs", []int{n1.Value, n3.Value, n5.Value})
-//return nil
